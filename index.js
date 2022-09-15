@@ -42,7 +42,7 @@ app.use( '/api/auth', require( './routes/auth' ) );
 
 // Manejar todas las demás rutas
 app.get( '*', ( req, res ) => {
-    res.sendFile( path.resolve( __dirname, 'public/index.html' ) )
+    res.sendFile( path.resolve( __dirname, 'public/index.html' ) );
 } )
 
 
